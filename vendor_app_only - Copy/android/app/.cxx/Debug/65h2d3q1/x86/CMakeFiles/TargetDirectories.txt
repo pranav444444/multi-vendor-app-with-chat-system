@@ -1,0 +1,2 @@
+D:/Flutter_sgp/vendor_app_only - Copy/android/app/.cxx/Debug/65h2d3q1/x86/CMakeFiles/edit_cache.dir
+D:/Flutter_sgp/vendor_app_only - Copy/android/app/.cxx/Debug/65h2d3q1/x86/CMakeFiles/rebuild_cache.dir

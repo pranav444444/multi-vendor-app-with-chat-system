@@ -1,0 +1,2 @@
+D:/multi_vendor_app Sce 46 complete/multi_vendor_app - Copy/android/app/.cxx/Debug/v4c5gm3t/x86/CMakeFiles/edit_cache.dir
+D:/multi_vendor_app Sce 46 complete/multi_vendor_app - Copy/android/app/.cxx/Debug/v4c5gm3t/x86/CMakeFiles/rebuild_cache.dir

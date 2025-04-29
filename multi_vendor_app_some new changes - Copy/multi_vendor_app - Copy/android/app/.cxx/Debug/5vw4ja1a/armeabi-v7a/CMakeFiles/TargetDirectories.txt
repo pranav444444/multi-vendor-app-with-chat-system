@@ -1,0 +1,2 @@
+C:/Users/Mukesh/Desktop/multi_vendor_app Sce 50 complete/multi_vendor_app - Copy/android/app/.cxx/Debug/5vw4ja1a/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/Mukesh/Desktop/multi_vendor_app Sce 50 complete/multi_vendor_app - Copy/android/app/.cxx/Debug/5vw4ja1a/armeabi-v7a/CMakeFiles/rebuild_cache.dir

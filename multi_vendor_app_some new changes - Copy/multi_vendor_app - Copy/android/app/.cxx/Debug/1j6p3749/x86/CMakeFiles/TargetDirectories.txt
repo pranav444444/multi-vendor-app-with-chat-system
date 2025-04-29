@@ -1,0 +1,2 @@
+E:/multivendor combine remaining/multi_vendor_app - Copy/android/app/.cxx/Debug/1j6p3749/x86/CMakeFiles/edit_cache.dir
+E:/multivendor combine remaining/multi_vendor_app - Copy/android/app/.cxx/Debug/1j6p3749/x86/CMakeFiles/rebuild_cache.dir

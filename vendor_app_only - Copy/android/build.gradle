@@ -1,0 +1,42 @@
+buildscript {
+    ext.kotlin_version = "1.7.10"
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Match the Android Gradle plugin version if needed
+        classpath "com.android.tools.build:gradle:8.1.2"
+
+
+        // Use the exact Kotlin version from the variable above
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // Match the Google Services plugin version if the uploaded file has it
+        classpath "com.google.gms:google-services:4.3.15"
+        classpath 'com.google.gms:google-services:4.4.1'
+    }
+}
+
+
+
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,2 @@
+D:/flutter final sgp/multi_vendor_app Sce 50 complete/multi_vendor_app Sce 50 complete/multi_vendor_app - Copy/android/app/.cxx/Debug/671d171e/x86_64/CMakeFiles/edit_cache.dir
+D:/flutter final sgp/multi_vendor_app Sce 50 complete/multi_vendor_app Sce 50 complete/multi_vendor_app - Copy/android/app/.cxx/Debug/671d171e/x86_64/CMakeFiles/rebuild_cache.dir

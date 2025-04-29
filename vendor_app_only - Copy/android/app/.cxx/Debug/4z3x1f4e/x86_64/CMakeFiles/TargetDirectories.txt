@@ -1,0 +1,2 @@
+C:/Users/Mukesh/Desktop/vendor_app_only Sec50 complete/vendor_app_only Sec48 complete/vendor_app_only - Copy/android/app/.cxx/Debug/4z3x1f4e/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/Mukesh/Desktop/vendor_app_only Sec50 complete/vendor_app_only Sec48 complete/vendor_app_only - Copy/android/app/.cxx/Debug/4z3x1f4e/x86_64/CMakeFiles/rebuild_cache.dir

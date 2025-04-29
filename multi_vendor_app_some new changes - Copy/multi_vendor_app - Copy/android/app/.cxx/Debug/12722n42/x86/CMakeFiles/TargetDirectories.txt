@@ -1,0 +1,2 @@
+D:/SGP FINAL FLUTTER/multi_vendor_app_some new changes - Copy/multi_vendor_app - Copy/android/app/.cxx/Debug/12722n42/x86/CMakeFiles/edit_cache.dir
+D:/SGP FINAL FLUTTER/multi_vendor_app_some new changes - Copy/multi_vendor_app - Copy/android/app/.cxx/Debug/12722n42/x86/CMakeFiles/rebuild_cache.dir

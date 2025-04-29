@@ -1,0 +1,2 @@
+D:/vendor_app_only Sec46 complete/vendor_app_only - Copy/android/app/.cxx/Debug/4i721v5v/x86_64/CMakeFiles/edit_cache.dir
+D:/vendor_app_only Sec46 complete/vendor_app_only - Copy/android/app/.cxx/Debug/4i721v5v/x86_64/CMakeFiles/rebuild_cache.dir

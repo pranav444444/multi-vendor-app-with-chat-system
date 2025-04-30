@@ -54,23 +54,29 @@ class _UploadScreenState extends State<UploadScreen> with SingleTickerProviderSt
           elevation: 0,
           bottom: TabBar(
             controller: _tabController,
+            isScrollable: false, // Changed to false to prevent top sliding
+            indicatorColor: Colors.white,
+            indicatorWeight: 3,
+            labelStyle: TextStyle(
+              fontSize: 14, // Reduced font size to fit all tabs
+              fontWeight: FontWeight.bold,
+            ),
             tabs: [
-              Tab(child: Text('General')),
-              Tab(child: Text('Shipping')),
-              Tab(child: Text('Attribute')),
-              Tab(child: Text('Images')),
-              
+              Tab(text: 'General'),
+              Tab(text: 'Shipping'),
+              Tab(text: 'Attributes'),
+              Tab(text: 'Images'),
             ],
           ),
         ),
         body: TabBarView(
           controller: _tabController,
+          physics: BouncingScrollPhysics(), // Keeps content sliding with bounce effect
           children: [
             GeneralScreen(),
             ShippingScreen(),
             AttributesScreen(),
             ImagesScreen(),
-            Container(), // Add your VideoScreen here
           ],
         ),
         bottomSheet: Padding(

@@ -66,9 +66,14 @@ class EarningsScreen extends StatelessWidget {
                 }
 
                 double totalOrder = 0.0;
+                int acceptedOrdersCount = 0;
 
                 for (var orderItem in orderSnapshot.data!.docs) {
-                  totalOrder += orderItem['quantity'] * orderItem['price'];
+                  // Only add to total if order is accepted
+                  if (orderItem['accepted'] == true) {
+                    totalOrder += orderItem['quantity'] * orderItem['price'];
+                    acceptedOrdersCount++;
+                  }
                 }
 
                 return Center(
@@ -94,7 +99,7 @@ class EarningsScreen extends StatelessWidget {
                               ),
                             ),
                             Text(
-                            "\₹"  + totalOrder.toStringAsFixed(2),
+                              "\₹" + totalOrder.toStringAsFixed(2),
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 18,
@@ -124,7 +129,7 @@ class EarningsScreen extends StatelessWidget {
                               ),
                             ),
                             Text(
-                              orderSnapshot.data!.docs.length.toString(),
+                              acceptedOrdersCount.toString(), // Show only accepted orders count
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 18,

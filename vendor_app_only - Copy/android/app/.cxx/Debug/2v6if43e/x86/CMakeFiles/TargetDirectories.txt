@@ -1,0 +1,2 @@
+D:/SGP FINAL FLUTTER/vendor_app_only - Copy/android/app/.cxx/Debug/2v6if43e/x86/CMakeFiles/edit_cache.dir
+D:/SGP FINAL FLUTTER/vendor_app_only - Copy/android/app/.cxx/Debug/2v6if43e/x86/CMakeFiles/rebuild_cache.dir

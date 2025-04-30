@@ -36,6 +36,12 @@ class _ImagesScreenState extends State<ImagesScreen>
     }
   }
 
+  void removeImage(int index) {
+    setState(() {
+      _image.removeAt(index - 1);  // Subtract 1 because index 0 is the add button
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     super.build(context);
@@ -59,14 +65,32 @@ class _ImagesScreenState extends State<ImagesScreen>
                           },
                           icon: Icon(Icons.add)),
                     )
-                  : Container(
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: FileImage(
-                            _image[index - 1],
+                  : Stack(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: FileImage(_image[index - 1]),
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
-                      ),
+                        Positioned(
+                          right: 0,
+                          child: CircleAvatar(
+                            radius: 15,
+                            backgroundColor: Colors.red,
+                            child: IconButton(
+                              icon: Icon(
+                                Icons.close,
+                                size: 15,
+                                color: Colors.white,
+                              ),
+                              onPressed: () => removeImage(index),
+                            ),
+                          ),
+                        ),
+                      ],
                     );
             }),
           ),

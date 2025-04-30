@@ -31,6 +31,7 @@ class _VendorChatDetailState extends State<VendorChatDetail> {
   @override
   void initState() {
     super.initState();
+    updateExistingMessages(); // Add this line
     _chatStream = _firestore
         .collection('chats')
         .where('buyerId', isEqualTo: widget.buyerId)
@@ -75,11 +76,38 @@ class _VendorChatDetailState extends State<VendorChatDetail> {
         'sellerId': widget.sellerId,
         'message': message,
         'senderId': FirebaseAuth.instance.currentUser!.uid,
-        'timestamp': DateTime.now(),
+        'timestamp': FieldValue.serverTimestamp(),
+        'seen': false  // Add this field
       });
+      
       setState(() {
         _messageController.clear();
       });
+    }
+  }
+
+  Future<void> updateExistingMessages() async {
+    try {
+      // Get all chat messages without a seen field or all messages
+      QuerySnapshot chatDocs = await FirebaseFirestore.instance
+          .collection('chats')
+          .get();  // Remove the where clause to get all documents
+
+      WriteBatch batch = FirebaseFirestore.instance.batch();
+      
+      for (var doc in chatDocs.docs) {
+        // Add seen field if it doesn't exist
+        if (!(doc.data() as Map<String, dynamic>).containsKey('seen')) {
+          batch.update(doc.reference, {
+            'seen': false,
+          });
+        }
+      }
+
+      await batch.commit();
+      print('Successfully updated ${chatDocs.docs.length} messages');
+    } catch (e) {
+      print('Error updating messages: $e');
     }
   }
 

@@ -70,7 +70,7 @@ class _FavoriteScreenState extends ConsumerState<FavoriteScreen> {
                                     ),
                                   ),
                                   Text(
-                                    '\$${wishData.price.toStringAsFixed(2)}',
+                                    '₹${wishData.price.toStringAsFixed(2)}',
                                     style: const TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,

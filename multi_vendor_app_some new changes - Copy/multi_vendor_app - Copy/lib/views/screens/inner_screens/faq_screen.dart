@@ -38,10 +38,8 @@ class FAQScreen extends StatelessWidget {
             'How do I contact customer support?',
             'You can reach us through chat support, email at support@chatterkart.com, or call us at 1800-123-4567.',
           ),
-          _buildFAQCard(
-            'Is my payment information secure?',
-            'Yes, we use industry-standard encryption to protect your payment information.',
-          ),
+         
+        
           
           _buildFAQCard(
             'How long does delivery take?',
